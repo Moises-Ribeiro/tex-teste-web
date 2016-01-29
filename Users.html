@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Lista de Usuários</title>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css.map"/>
+	<link rel="stylesheet" href="css/bootstrap-theme.css"/>
+	<link rel="stylesheet" href="css/bootstrap-theme.css.map"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body>
+    <scrip type="text/javascript" src= js/bootstrap.js></scrip>
+    <scrip type="text/javascript" src= js/bootstrap.mim.js></scrip>		
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Atenção </h4>
+	      </div>
+	      <div class="modal-body">
+	        Deseja remover o registro?
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+   <table id="minhaTabela" class="table table-striped table-hover" >
+   	  <caption>Tabela de Contatos</caption>
+   	  <thead>
+   	  		<tr>
+   	  			<th>First Name</th>
+   	  			<th>Last Name</th>
+   	  			<th>Address</th>
+   	  			<th>Email</th>
+   	  			<th>Contact</th>
+   	  			<th>Edit</th>
+   	  			<th>Delete</th>
+   	  		</tr>
+
+   	  </thead>
+   	  <tbody>
+   	  	  <tr>
+	   	  	<td>Adriano</td>
+	   	  	<td>Santana</td>
+	   	  	<td>Rua Amaral</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-2788-2299</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>Matheus</td>
+	   	  	<td>Santos</td>
+	   	  	<td>Rua rubio santana</td>
+	   	  	<td>matheus@gmail.com</td>
+	   	  	<td>11-2788-2234</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>Claudio</td>
+	   	  	<td>Ribeiro</td>
+	   	  	<td>Rua pimentel </td>
+	   	  	<td>claudio@gmail.com</td>
+	   	  	<td>11-5587-2276</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>Alan</td>
+	   	  	<td>Gibrail</td>
+	   	  	<td>Rua calando</td>
+	   	  	<td>Alangibrail@gmail.com</td>
+	   	  	<td>11-2788-2299</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>´Sabrina</td>
+	   	  	<td>caraveli</td>
+	   	  	<td>Rua das Flores</td>
+	   	  	<td>Sabrina@gmail.com</td>
+	   	  	<td>11-94998-9088</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>Marcos</td>
+	   	  	<td>Khaliu</td>
+	   	  	<td>Rua Perus</td>
+	   	  	<td>Marcos@gmail.com</td>
+	   	  	<td>11-98877-9076</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>Salvador</td>
+	   	  	<td>Sales</td>
+	   	  	<td>Rua antoni fernandes</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-5433-3344</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>Salvador</td>
+	   	  	<td>Sales</td>
+	   	  	<td>Rua antoni fernandes</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-5433-3344</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>Cezar</td>
+	   	  	<td>Mendes</td>
+	   	  	<td>Rua antoni fernandes</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-5433-3344</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>kelly</td>
+	   	  	<td>Sales</td>
+	   	  	<td>Rua antoni fernandes</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-5433-3344</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+   	  	  <tr>
+	   	  	<td>Marcio</td>
+	   	  	<td>Sales</td>
+	   	  	<td>Rua antoni fernandes</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-5433-3344</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+
+   	  	  <tr>
+	   	  	<td>Marcio</td>
+	   	  	<td>Sales</td>
+	   	  	<td>Rua antoni fernandes</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-5433-3344</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+
+   	  	  <tr>
+	   	  	<td>Moisés</td>
+	   	  	<td>Sales</td>
+	   	  	<td>Rua antoni fernandes</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-5433-3344</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+
+
+   	  	  <tr>
+	   	  	<td>Marta</td>
+	   	  	<td>Sales</td>
+	   	  	<td>Rua antoni fernandes</td>
+	   	  	<td>Rose@gmail.com</td>
+	   	  	<td>11-5433-3344</td>
+	   	  	<td>	   	  		   	  	   
+	           <a href="#myModal"  type="glyphicon" class="glyphicon glyphicon-trash" data-toggle="modal" data-target="#myModal"></a>  
+	   	  	</td>
+	   	  	<td>
+	   	  	  <a href="form.html" type="glyphicon" class="glyphicon glyphicon-pencil"></a>	
+	   	  	</td>
+   	  	  </tr>
+   	  </tbody>
+
+   </table>
+
+   <script>
+      $(document).ready(function()
+      {
+        $('#minhaTabela').dataTable();
+      }
+     );
+    </script>
+</body>
+</html>
